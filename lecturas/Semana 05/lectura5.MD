@@ -1,0 +1,11 @@
+# Combining predictions for accurate recommender systems (2010)
+
+## Jahrer, M., Töscher, A. and Legenstein, R.
+
+El artículo es, básicamente, una combinación entre un compilado de algoritmos, 18 predictores, y cómo estos se usaron para hacer una mezcla (_blend_) que reporta un mejor desempeño que los modelos por separado. Primero se enlistan los diferentes algoritmos que se usan y una descripción. Luego, se presentan las distintas mezclas usadas, sus ponderaciones, sus resultados individuales (por cada método de mezclado) y la comparación de estos. Se concluye que el mejor “_single blending algorithm_” es una red neural con parámetros 19-30-1 (neuronas por capa). Pero que métodos más grandes usando _bagging_ consiguieron mejor resultado en el _set_ de prueba de Netflix. Es decir, se había logrado el objetivo de demostrar que se podía mejor con respecto a predictores individuales.
+
+Una cosa que me llama la atención es que, a pesar de usar varios y distintos modelos, son bastante pocos en comparación a los que se encuentran disponibles hoy en día, lo que sería interesante explorar sería una exhaustiva combinación de los distintos algoritmos que se encuentran en estos tiempos. Sin embargo, eso representaría más bien una actualización de este artículo, por lo que no supondría un gran avance.
+
+Por otra parte, se le podría agregar un análisis de desempeño en otros _dataset_ (aunque esto pasaría a tocar puntos delicados como que los parámetros de algoritmos son dependientes de los datos) o, incluso, otros aspectos (métricas), como confianza, _trust_, _novelty_, diversidad, etc. Esto tendría mayor impacto pues, además de mostrar que se puede mejorar en _accuracy_ o RMSE, podría verificarse que tan generalizable es, o que tan bien es recibido por usuarios.
+
+Finalmente, esto permite ampliar aun más la visión de lo que se puede usar para recomendar. Puede ser más costoso, pero no se pierde mucho al intentar probar estas técnicas y se puede ganar mucho. Aún quedan dimensiones por explorar (por ejemplo, confianza o diversidad) lo que no descarta que se pueda seguir mostrando el potencial de esto. Aunque es esperable, por su creciente uso en _machine learning_, que sea una de las mejores técnicas para mejorar rendimiento.
